@@ -268,6 +268,101 @@
         </div>
       </div>
     </div>
+
+    <!-- Latihan pengerjaan 4-->
+    <div class="container my-5">
+      <h2 class="text-center mb-4 fw-bold border-bottom border-danger pb-2">
+        Kontak Abdi
+      </h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="bg-white p-4 rounded shadow-sm">
+            <div class="mb-3">
+              <label for="inputNama" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputNama"
+                placeholder="Lebetkeun nami anjeun"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Lebetkeun email anjeun"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="inputPesan" class="form-label">Pesan</label>
+              <textarea
+                class="form-control"
+                id="inputPesan"
+                rows="4"
+                placeholder="Tulis pesen anjeun didieu..."
+              ></textarea>
+            </div>
+
+            <!-- Tombol Kirim memicu Modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalKonfirmasi"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Pengerjaan Latihan 5-->
+    <div
+      class="modal fade"
+      id="modalKonfirmasi"
+      tabindex="-1"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalLabel">
+              Konfirmasi Pengiriman
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Apakah anjeun yakin bade mengirim pesan iyeu?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              onclick="alert('Pesan berhasil dikirim! Hatur Nuhun.')"
+            >
+              Muhun, Kirim
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bagian Footer -->
     <footer class="bg-dark text-white text-center py-4 mt-5">
       <div class="container">
